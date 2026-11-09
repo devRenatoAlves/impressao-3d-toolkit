@@ -1,0 +1,34 @@
+# Credenciais e segredos — nunca versionar
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+auth.json
+
+# Estado e logs do Hermes (contêm ids de chat, caminhos, pids)
+gateway_state.json
+*.log
+logs/
+state.db
+state.db-*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp

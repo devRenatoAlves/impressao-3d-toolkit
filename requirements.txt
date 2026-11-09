@@ -1,0 +1,23 @@
+# Dependências do impressao-3d-toolkit
+#
+# A ferramenta principal NÃO precisa de nada: `analisar3d.py` roda com Python
+# puro (3.9+), tanto para STL quanto para 3MF, inclusive no modo baixa memória.
+# Os pacotes abaixo só são necessários para funções específicas.
+#
+# Instale tudo:        pip install -r requirements.txt
+# Ou só o que precisa: veja o comentário de cada bloco.
+
+# --- analisar3d.py --espessura (medir parede fina por raios) ---
+numpy>=1.24
+trimesh>=4.0
+rtree>=1.0            # aceleração do índice espacial; sem ele o trimesh fica lento
+
+# --- gerar_pinos_encaixe.py (gerar pino a partir da cavidade) ---
+shapely>=2.0
+
+# --- gerar_relevo_foto.py (relevo 3D a partir de imagem) ---
+Pillow>=10.0
+scipy>=1.10
+
+# --- exemplos/gerar_guia_pdf.py (guia PDF de montagem) ---
+reportlab>=4.0
