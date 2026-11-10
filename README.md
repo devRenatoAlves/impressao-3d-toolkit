@@ -1,5 +1,7 @@
 # impressao-3d-toolkit
 
+*[English version](README-en.md)*
+
 **Descobrir se um modelo 3D vai imprimir bem — antes de gastar filamento.**
 
 Você baixa um STL bonito do MakerWorld, manda imprimir, e 9 horas depois tem
