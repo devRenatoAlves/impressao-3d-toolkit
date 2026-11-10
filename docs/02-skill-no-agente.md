@@ -26,12 +26,16 @@ O formato é o **Agent Skills** da Anthropic, lido tanto pelo Claude Code quanto
 pelo Hermes Agent.
 
 ```bash
-# Claude Code
+# Claude Code — skills pessoais, valem em todos os projetos
 cp -r skill/impressao-3d ~/.claude/skills/
 
 # Hermes Agent
 cp -r skill/impressao-3d "${HERMES_HOME:-$HOME/.hermes}/skills/"
 ```
+
+Nos dois, o agente carrega a skill sozinho quando a conversa combina com a
+`description`. No Claude Code você também pode invocar na mão com
+`/impressao-3d` — o nome do comando vem do nome da pasta.
 
 A skill referencia as ferramentas por caminho relativo (`ferramentas/...`).
 Mantenha o repositório clonado em algum lugar estável e diga ao agente onde

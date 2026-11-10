@@ -22,7 +22,7 @@ nenhuma.**
 ## Camada 1 — As ferramentas
 
 ```bash
-git clone https://github.com/<seu-usuario>/impressao-3d-toolkit.git
+git clone https://github.com/devRenatoAlves/impressao-3d-toolkit.git
 cd impressao-3d-toolkit
 
 python3 ferramentas/analisar3d.py meu_modelo.stl
